@@ -10,11 +10,7 @@ const server = app.listen(port, () => console.log(`Example app listening on port
 app.use(express.static('public'))
 
 // Socket setup
-const io = socket(server,{
-    cors: {
-        origin: "https://localhost:3000",
-        methods: ["GET", "POST"]
-    }})
+const io = socket(server)
 
 
 io.on('connection', socket => {
