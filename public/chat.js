@@ -1,6 +1,8 @@
 // Make connection
+const port = process.env.port || 3000
+
 // const socket = io.connect('http://10.251.0.68:3000/')
-const socket = io.connect('http://localhost:3000')
+const socket = io.connect('http://localhost:'+port)
 
 
 // Query DOM
