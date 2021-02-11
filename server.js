@@ -1,7 +1,7 @@
 const express = require('express')
 const socket = require('socket.io')
 const app = express()
-const port = 3000
+const port = process.env.port || 3000
 
 // app.get('/', (req, res) => res.send('Hello World!'))
 const server = app.listen(port, () => console.log(`Example app listening on port port!`))

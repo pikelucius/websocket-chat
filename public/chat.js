@@ -1,5 +1,7 @@
 // Make connection
-const socket = io.connect('http://10.251.0.68:3000/')
+// const socket = io.connect('http://10.251.0.68:3000/')
+const socket = io.connect('http://localhost:3000')
+
 
 // Query DOM
 const message = document.querySelector('#message'),
